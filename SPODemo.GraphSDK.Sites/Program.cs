@@ -1,7 +1,6 @@
 ﻿using Azure.Identity;
 using Microsoft.Graph;
 using Microsoft.Graph.Models;
-using Microsoft.IdentityModel.Protocols;
 using System;
 using System.Configuration;
 using System.Threading.Tasks;

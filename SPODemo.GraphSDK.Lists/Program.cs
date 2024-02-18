@@ -1,11 +1,9 @@
 ﻿using Azure.Identity;
 using Microsoft.Graph;
 using Microsoft.Graph.Models;
-using Microsoft.IdentityModel.Protocols;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace SPODemo.GraphSDK.Lists
@@ -110,7 +108,7 @@ namespace SPODemo.GraphSDK.Lists
             item.Fields.AdditionalData.TryGetValue("Area", out area);
             item.Fields.AdditionalData.TryGetValue("Region", out region);
 
-            return $"{item.Id}: {category} - {area} - {region}");
+            return $"{item.Id}: {category} - {area} - {region}";
         }
     }
 }
